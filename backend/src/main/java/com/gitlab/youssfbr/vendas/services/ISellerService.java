@@ -7,4 +7,5 @@ import java.util.List;
 public interface ISellerService {
 
     List<SellerDTO> findAll();
+
 }

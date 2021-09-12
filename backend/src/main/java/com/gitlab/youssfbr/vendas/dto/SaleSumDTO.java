@@ -8,18 +8,17 @@ import lombok.Setter;
 
 import java.io.Serializable;
 
-@Getter@Setter
-@AllArgsConstructor
+@Getter
+@Setter
 @NoArgsConstructor
-public class SellerDTO implements Serializable {
+public class SaleSumDTO implements Serializable {
     private static final long serialVersionUID = 1L;
 
-    private Long id;
-    private String name;
+    private String sellerName;
+    private Double sum;
 
-    public SellerDTO(Seller entity) {
-        id = entity.getId();
-        name = entity.getName();
+    public SaleSumDTO(Seller seller, Double sum) {
+        sellerName = seller.getName();
+        this.sum = sum;
     }
-
 }

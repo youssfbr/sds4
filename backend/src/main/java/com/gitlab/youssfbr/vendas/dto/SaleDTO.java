@@ -31,4 +31,5 @@ public class SaleDTO implements Serializable {
         date = entity.getDate();
         seller = new SellerDTO(entity.getSeller());
     }
+
 }
